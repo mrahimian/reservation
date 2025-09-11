@@ -30,7 +30,6 @@ public class ReservationApplicationService {
     }
 
     public ReservationDto reserveSlot(Long slotId, Long userId) {
-        //First cache invalidation to prevent probable inconsistency
         var reservation = reservationRepository.reserveSlot(slotId, userId);
         slotsCache.asMap().keySet().forEach(slotsCache::invalidate);
         return reservation;
