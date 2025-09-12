@@ -45,6 +45,22 @@ src/main/java/ir/azki/
 
 ---
 
+## Build & Run
+
+Before building the Docker image, you need to package the application:
+
+```bash
+mvn clean package
+```
+
+Then run the docker compose:
+
+```bash
+docker compose up (or docker-compose up)
+```
+
+---
+
 ## Example API Endpoints
 
 ### Authentication
