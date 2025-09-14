@@ -1,6 +1,5 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/reservation_db
     username: root
     password: rootpass
     driver-class-name: com.mysql.cj.jdbc.Driver
